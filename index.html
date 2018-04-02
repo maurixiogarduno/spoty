@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>GitHub | Spoty</title>
+    <link rel="icon" href="favicon.png">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/main.css"  media="screen,projection"/>
+    <script defer src="js/fontawesome-all.js"></script>
+  </head>
+
+  <body class="black">
+    <!--Inicio de header-->
+    <header>
+    <!--Inicio de navbar-->
+    <div class="navbar-fixed">
+      <nav class="nav-extended grey darken-4 z-depth-2">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo center green-text text-accent-3"><b>Spoty</b></a>
+          <ul class="left">
+            <li><a href="#" data-activates="slide-out" class="button"><i class="fas fa-bars"></i></a></li>
+          </ul>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <a class="waves-effect waves-light btn green accent-3">Download</a>
+          </ul>
+          <ul class="right">
+            <li><a class="dropdown-button" href="#!" data-activates="dropdown1" ><i class="fas fa-ellipsis-v"></i></a></li>
+          </ul>
+          <ul id="dropdown1" class="dropdown-content">
+            <li><a class="teal-text text-accent-4" href="#!">one</a></li>
+            <li><a class="teal-text text-accent-4" href="#!">two</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a class="teal-text text-accent-4" href="#!">three</a></li>
+            <li><a class="teal-text text-accent-4" href="#!"><i class="fas fa-puzzle-piece"></i>&nbspfour</a></li>
+            <li><a class="teal-text text-accent-4" href="#!"><i class="fas fa-puzzle-piece"></i>&nbspfive</a></li>
+          </ul>
+        </div>
+        <div class="nav-content">
+          <ul class="tabs tabs-transparent">
+            <li class="tab"><a href="#one"><i class="fas fa-puzzle-piece"></i>&nbspMusic</a></li>
+            <li class="tab"><a href="#two"><i class="fas fa-puzzle-piece"></i>&nbspPlaylist</a></li>
+            <li class="tab"><a href="#three"><i class="fas fa-puzzle-piece"></i>&nbspTop</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!--Fin de navbar-->
+
+    <!--Inicio de sidenav-->
+    <ul id="slide-out" class="side-nav">
+      <li><div class="user-view">
+        <div class="background">
+          <img src="images/office.jpg">
+        </div>
+        <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+        <a href="#name"><span class="white-text name">John Doe</span></a>
+        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+      </div></li>
+      <li><a href="#!"><i class="fas fa-puzzle-piece"></i>&nbspFirst Link With Icon</a></li>
+      <li><a href="#!">Second Link</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">Subheader</a></li>
+      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+    </ul>
+         <!--Fin de sidenav-->
+    </header>
+    <!--Fin de header-->
+
+
+
+
+
+<!--Inicio de main-->
+<main>
+<!--Inicio de Tab one-->
+    <div id="one" class="col s12">
+    </div>
+<!--Fin de Tab one-->
+
+<!--Inicio de Tab two-->
+    <div id="two" class="col s12">
+    </div>
+<!--Fin de Tab two-->
+
+<!--Inicio de Tab three-->
+    <div id="three" class="col s12">
+    </div>
+<!--Fin de Tab three-->
+</main>
+<!--Fin de main-->
+
+
+
+
+
+
+
+    <!--Inicio de footer-->
+    <footer class="page-footer grey darken-4">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Acerca de este sitio</h5>
+            <p class="grey-text text-lighten-4">Este sitio fue creado para compartir codigo, librerias y material con la comunidad de desarrolladores en general.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Contacto</h5>
+            <ul>
+              <li><a class="white-text text-accent-4" href="#!"><i class="fab fa-facebook-square"></i>&nbspFacebook</a></li>
+              <li><a class="white-text text-accent-4" href="#!"><i class="fab fa-facebook-messenger"></i>&nbspMessenger</a></li>
+              <li><a class="white-text text-accent-4" href="#!"><i class="fab fa-github"></i>&nbspGitHub</a></li>
+              <li><a class="white-text text-accent-4" href="#!"><i class="fab fa-meetup"></i>&nbspMeetup</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2018 Copyright @diwem
+        <a class="grey-text text-lighten-4 right" href="#!">Design @maurllxe</a>
+        </div>
+      </div>
+    </footer>
+    <!--Fin de footer-->
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript">
+      $( document ).ready(function(){
+        $(".button").sideNav();
+        $('select').material_select();
+        $('.carousel.carousel-slider').carousel({
+          fullWidth: true,
+          indicators: true
+        });
+      })
+    </script>
+    <!--Fin de Import jQuery before materialize.js-->
+
+  </body>
+</html>
